@@ -1,0 +1,12 @@
+html, body, #root { height: 100%; }
+ion-router-outlet, #main { height: 100%; }
+
+/* Altura del área del mapa (ajusta 56/112 según tu header) */
+.map-wrapper {
+  position: relative;
+  height: calc(100vh - 112px); /* prueba 56px si ves muy alto/bajo */
+  width: 100%;
+}
+
+/* (opcional) quita artefactos visuales */
+.leaflet-container { background: #f8f8f8; }
